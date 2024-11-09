@@ -1,0 +1,120 @@
+*, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Segoe Ui", sans-serif;
+	background-color: #ededed;
+}
+
+header {
+	height: 20vh;
+	max-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6c64f6;
+	cursor: default;
+}
+
+main {
+	height: 80vh;
+	max-height: 80vh;
+	position: relative;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.wrapper-input {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+}
+
+.wrapper-input input {
+	outline: none;
+	border: 1px solid #6c64f6;
+	width: 50%;
+	height: 2em;
+	border-radius: 10px;
+	cursor: default;
+	text-align: center;
+}
+
+
+.wrapper-input button {
+	border: none;
+	outline: none;
+	width: 18%;
+	border-radius: 6px;
+	background-color: #6c64f6;
+	color: #ffffff;
+	transition: .3s ease-in-out;
+	cursor: pointer;
+}
+
+.wrapper-input button:hover {
+	color: #6c64f6;
+	background-color: #ffffff;
+	border: 1px solid #6c64f6;
+}
+
+.wrapper-input button:active {
+	transform: scale(.8);
+}
+
+.items {
+	width: 60%;
+	height: 2em;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.item {
+	display: flex;
+	gap: 2em;
+	text-align: center;
+	margin-top: 1em;
+	width: 80%;
+}
+
+.delete {
+	border: none;
+	outline: none;
+	width: 5em;
+	height: 2.5em;
+	border-radius: 6px;
+	background-color: crimson;
+	color: #ffffff;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+.delete:hover {
+	color: crimson;
+	background-color: #ffffff;
+	border: 1px solid crimson;
+}
+
+
+.checkbox {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+}
+
+.line-through {
+	text-decoration: line-through;
+	color: lime;
+	transition: .3s ease-in-out;
+}
